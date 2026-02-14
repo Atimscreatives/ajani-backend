@@ -1,0 +1,9 @@
+.env*
+.env.local
+
+node_modules
+test
+.cursor
+guide.txt
+test-data.json
+bash.exe.stackdump
