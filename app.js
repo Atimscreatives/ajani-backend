@@ -28,8 +28,8 @@ app.use(
     origin: (origin, callback) => {
       const allowedOrigins = [
         // process.env.FRONTEND_URL,
-        "https://ajani.ai/",
-        "https://ajaniv3-nine.vercel.app/",
+        "https://ajani.ai",
+        "https://ajaniv3-nine.vercel.app",
         "http://localhost:5173",
         "http://localhost:3000",
       ].filter(Boolean); // Remove undefined values
