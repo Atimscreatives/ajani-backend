@@ -27,7 +27,7 @@ app.use(
   cors({
     origin: (origin, callback) => {
       const allowedOrigins = [
-        process.env.FRONTEND_URL,
+        // process.env.FRONTEND_URL,
         "https://ajani.ai/",
         "https://ajaniv3-nine.vercel.app/",
         "http://localhost:5173",
