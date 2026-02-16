@@ -13,6 +13,7 @@ import listingRoutes from "./routes/listing.routes.js";
 import bookingRoutes from "./routes/booking.routes.js";
 import adminRoutes from "./routes/admin.routes.js";
 import uploadRoutes from "./routes/upload.routes.js";
+import reviewRoutes from "./routes/review.routes.js";
 import aichatRoutes from "./routes/aichat.routes.js";
 
 dotenv.config({ path: ".env.local" });
@@ -27,9 +28,9 @@ app.use(
   cors({
     origin: (origin, callback) => {
       const allowedOrigins = [
-        // process.env.FRONTEND_URL,
-        "https://ajani.ai",
-        "https://ajaniv3-nine.vercel.app",
+        process.env.FRONTEND_URL,
+        "https://ajani.ai/",
+        "https://ajaniv3.vercel.app/",
         "http://localhost:5173",
         "http://localhost:3000",
       ].filter(Boolean); // Remove undefined values
@@ -64,30 +65,28 @@ const limiterDev = rateLimit({
   message: "Too many requests from this IP, please try again in an hour!",
 });
 
-// const minuteLimiter = rateLimit({
-//   windowMs: 60 * 1000, // 1 minute
-//   max: 10,
-//   standardHeaders: true,
-//   legacyHeaders: false,
-//   message: { error: "Too many requests, please try again later." },
-// });
+const minuteLimiter = rateLimit({
+  windowMs: 60 * 1000, // 1 minute
+  max: 10,
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: { error: "Too many requests, please try again later." },
+});
 
-// const hourLimiter = rateLimit({
-//   windowMs: 60 * 60 * 1000, // 1 hour
-//   max: 30,
-//   standardHeaders: true,
-//   legacyHeaders: false,
-//   message: { error: "Too many requests, please try again later in an hour." },
-// });
+const hourLimiter = rateLimit({
+  windowMs: 60 * 60 * 1000, // 1 hour
+  max: 30,
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: { error: "Too many requests, please try again later in an hour." },
+});
 
-app.use("/api", limiterDev);
-
-// if (process.env.NODE_ENV === "development") {
-//   app.use("/api", limiterDev);
-// } else if (process.env.NODE_ENV === "production") {
-//   app.use("/api", minuteLimiter);
-//   app.use("/api", hourLimiter);
-// }
+if (process.env.NODE_ENV === "development") {
+  app.use("/api", limiterDev);
+} else if (process.env.NODE_ENV === "production") {
+  app.use("/api", minuteLimiter);
+  app.use("/api", hourLimiter);
+}
 
 // Routes
 app.use("/api/v1/auth", authRoutes);
@@ -96,6 +95,7 @@ app.use("/api/v1/listings", listingRoutes);
 app.use("/api/v1/bookings", bookingRoutes);
 app.use("/api/v1/admin", adminRoutes);
 app.use("/api/v1/images", uploadRoutes);
+app.use("/api/v1/reviews", reviewRoutes);
 app.use("/api/v1/ai", aichatRoutes);
 
 app.use(errorHandler);

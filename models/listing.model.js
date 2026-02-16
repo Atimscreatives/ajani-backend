@@ -417,25 +417,72 @@ const ServiceDetailsSchema = new mongoose.Schema(
 // Event Details Schema
 const EventDetailsSchema = new mongoose.Schema(
   {
-    hallDescription: {
-      type: String,
-      required: true,
-      trim: true,
-    },
+    eventType: [
+      {
+        hallType: {
+          type: String,
+          enum: ["indoor", "outdoor", "both"],
+          required: true,
+        },
+        minGuestCapacity: {
+          type: Number,
+          required: true,
+        },
+        maxGuestCapacity: {
+          type: Number,
+          required: true,
+        },
+        hallDescription: {
+          type: String,
+          required: true,
+          trim: true,
+        },
+        priceRange: {
+          priceFrom: {
+            type: Number,
+            required: true,
+          },
+          priceTo: {
+            type: Number,
+            required: true,
+          },
+        },
+        minimumBookingDuration: {
+          type: String,
+        },
+        requiredDeposit: {
+          type: Number,
+          min: 0,
+          max: 100,
+        },
+        refundPolicy: {
+          type: String,
+        },
+        hallPhotos: {
+          type: [String],
+          default: [],
+          maxlength: [10, "Hall photos array can have a maximum of 10 images"],
+          validate: {
+            validator: function (v) {
+              return v.every(img => validator.isURL(img));
+            },
+            message: "All hall photos must be valid URLs",
+          },
+        },
+        eventSetupPhotos: {
+          type: [String],
+          default: [],
+          maxlength: [10, "Event setup photos array can have a maximum of 10 images"],
+          validate: {
+            validator: function (v) {
+              return v.every(img => validator.isURL(img));
+            },
+            message: "All event setup photos must be valid URLs",
+          },
+        },
+      },
+    ],
     numberOfHalls: {
-      type: Number,
-      required: true,
-    },
-    hallType: {
-      type: String,
-      enum: ["indoor", "outdoor", "both"],
-      required: true,
-    },
-    minGuestCapacity: {
-      type: Number,
-      required: true,
-    },
-    maxGuestCapacity: {
       type: Number,
       required: true,
     },
@@ -484,49 +531,6 @@ const EventDetailsSchema = new mongoose.Schema(
     supportedEventTypes: {
       type: [String],
       required: true,
-    },
-    priceRange: {
-      priceFrom: {
-        type: Number,
-        required: true,
-      },
-      priceTo: {
-        type: Number,
-        required: true,
-      },
-    },
-    minimumBookingDuration: {
-      type: String,
-    },
-    requiredDeposit: {
-      type: Number,
-      min: 0,
-      max: 100,
-    },
-    refundPolicy: {
-      type: String,
-    },
-    hallPhotos: {
-      type: [String],
-      default: [],
-      maxlength: [10, "Hall photos array can have a maximum of 10 images"],
-      validate: {
-        validator: function (v) {
-          return v.every(img => validator.isURL(img));
-        },
-        message: "All hall photos must be valid URLs",
-      },
-    },
-    eventSetupPhotos: {
-      type: [String],
-      default: [],
-      maxlength: [10, "Event setup photos array can have a maximum of 10 images"],
-      validate: {
-        validator: function (v) {
-          return v.every(img => validator.isURL(img));
-        },
-        message: "All event setup photos must be valid URLs",
-      },
     },
     googleMapsLink: {
       type: String,
@@ -730,7 +734,6 @@ listingSchema.pre("validate", function () {
 
 // Ensure unique name and vendorId combination
 listingSchema.index({ name: 1, vendorId: 1 }, { unique: true });
-
 
 const Listing = mongoose.model("Listing", listingSchema);
 
