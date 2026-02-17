@@ -22,7 +22,7 @@ const createListing = catchAsync(async (req, res, next) => {
   } = req.body;
 
   // CHECK IF USER IS A VENDOR OR ADMIN
-  if (req.user.role !== "vendor" && req.user.role !== "admin") {
+  if (req.user.role !== "vendor" && req.user.role !== "admin" && req.user.role !== "superadmin") {
     return next(new AppError(403, "You are not registered to create listings"));
   }
 
@@ -30,7 +30,7 @@ const createListing = catchAsync(async (req, res, next) => {
   let targetVendorId = req.user.id;
 
   // If admin is creating listing for another vendor
-  if (req.user.role === "admin") {
+  if (req.user.role === "admin" || req.user.role === "superadmin") {
     const targetVendor = await User.findById(vendorId);
     if (!vendorId) {
       return next(new AppError(400, "Vendor ID must be specified by admin"));
@@ -56,7 +56,8 @@ const createListing = catchAsync(async (req, res, next) => {
   }
 
   // CHECK IF USER CATEGORY IS NOT HOTEL (for non-admins)
-  if (category === "hotel" && req.user.role !== "admin") {
+  if (category === "hotel" && req.user.role !== "admin" && req.user.role !== "superadmin") {
+    console.log(req.user.role, "CHECK");
     return next(
       new AppError(
         403,

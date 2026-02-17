@@ -80,6 +80,10 @@ const HotelDetailsSchema = new mongoose.Schema(
         },
       },
     ],
+    noOfRooms: {
+      type: Number,
+      required: true,
+    },
   },
   { _id: false }
 );
@@ -675,9 +679,14 @@ listingSchema.pre("save", function () {
 });
 
 // Automatically calculate salesPrice for hotel listings based on basePrice and discountedRate
-listingSchema.pre("save", function (next) {
+listingSchema.pre("save", function () {
   // Only process if this is a hotel listing and has details
-  if (this.category === "hotel" && this.details && this.details.roomTypes) {
+  if (
+    this.category === "hotel" &&
+    this.details &&
+    this.details.roomTypes &&
+    this.details.noOfRooms
+  ) {
     // Process each room type in the hotel
     this.details.roomTypes = this.details.roomTypes.map(roomType => {
       // Only calculate salesPrice if basePrice is provided
@@ -695,8 +704,6 @@ listingSchema.pre("save", function (next) {
       return roomType;
     });
   }
-
-  next();
 });
 
 // Validate details based on category before saving
