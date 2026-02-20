@@ -15,6 +15,7 @@ import adminRoutes from "./routes/admin.routes.js";
 import uploadRoutes from "./routes/upload.routes.js";
 import reviewRoutes from "./routes/review.routes.js";
 import aichatRoutes from "./routes/aichat.routes.js";
+import sitemapRoutes from "./routes/sitemap.routes.js";
 
 dotenv.config({ path: ".env.local" });
 const app = express();
@@ -81,14 +82,12 @@ const hourLimiter = rateLimit({
   message: { error: "Too many requests, please try again later in an hour." },
 });
 
-app.use("/api", limiterDev);
-
-// if (process.env.NODE_ENV === "development") {
-//   app.use("/api", limiterDev);
-// } else if (process.env.NODE_ENV === "production") {
-//   app.use("/api", minuteLimiter);
-//   app.use("/api", hourLimiter);
-// }
+if (process.env.NODE_ENV === "development") {
+  app.use("/api", limiterDev);
+} else if (process.env.NODE_ENV === "production") {
+  app.use("/api", minuteLimiter);
+  app.use("/api", hourLimiter);
+}
 
 // Routes
 app.use("/api/v1/auth", authRoutes);
@@ -99,6 +98,7 @@ app.use("/api/v1/admin", adminRoutes);
 app.use("/api/v1/images", uploadRoutes);
 app.use("/api/v1/reviews", reviewRoutes);
 app.use("/api/v1/ai", aichatRoutes);
+app.use("/api/v1", sitemapRoutes);
 
 app.use(errorHandler);
 

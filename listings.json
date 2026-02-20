@@ -27,7 +27,8 @@
       "pricePerNight": 75000,
       "maxGuests": 2,
       "amenities": []
-    }
+    },
+    "slug": "1-bedroom-mini-flat-aare-new-bodija"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -57,7 +58,8 @@
       "pricePerNight": 30000,
       "maxGuests": 2,
       "amenities": []
-    }
+    },
+    "slug": "1-bedroom-mini-flat-room-and-parlour-short-let-felele"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -87,7 +89,8 @@
       "pricePerNight": 65000,
       "maxGuests": 2,
       "amenities": []
-    }
+    },
+    "slug": "1-bedroom-mini-flat-room-and-parlour-short-let-awosika-avenue"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -117,7 +120,8 @@
       "pricePerNight": 100000,
       "maxGuests": 2,
       "amenities": []
-    }
+    },
+    "slug": "1-bedroom-mini-flat-room-and-parlour-short-let-old-bodija"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -159,7 +163,8 @@
       "amenities": []
     },
     "description": "3G GARDENS AND APARTMENTS - Quality service and excellent facilities.",
-    "price": 100000
+    "price": 100000,
+    "slug": "3g-gardens-and-apartments"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -189,7 +194,8 @@
       "pricePerNight": 160000,
       "maxGuests": 2,
       "amenities": []
-    }
+    },
+    "slug": "4-bedroom-shortlet"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -226,7 +232,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "4 BRASS HOTEL - Quality service and excellent facilities."
+    "description": "4 BRASS HOTEL - Quality service and excellent facilities.",
+    "slug": "4-brass-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -263,7 +270,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "A3 HOTEL & SUITE - Quality service and excellent facilities."
+    "description": "A3 HOTEL & SUITE - Quality service and excellent facilities.",
+    "slug": "a3-hotel-suite"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -312,7 +320,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "ACADEMY SUITES - Quality service and excellent facilities."
+    "description": "ACADEMY SUITES - Quality service and excellent facilities.",
+    "slug": "academy-suites-oke-ado"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -361,7 +370,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "ACADEMY SUITES - Quality service and excellent facilities."
+    "description": "ACADEMY SUITES - Quality service and excellent facilities.",
+    "slug": "academy-suites-old-ife-road"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -398,7 +408,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "ADIS HOTELS IBADAN - Quality service and excellent facilities."
+    "description": "ADIS HOTELS IBADAN - Quality service and excellent facilities.",
+    "slug": "adis-hotels-ibadan"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -447,7 +458,8 @@
       ],
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
-    }
+    },
+    "slug": "adis-hotels-prime"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -481,7 +493,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "AKINLAF HOTEL - Quality service and excellent facilities."
+    "description": "AKINLAF HOTEL - Quality service and excellent facilities.",
+    "slug": "akinlaf-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -530,7 +543,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "ALIVIAR HOTEL - Quality service and excellent facilities."
+    "description": "ALIVIAR HOTEL - Quality service and excellent facilities.",
+    "slug": "aliviar-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -561,7 +575,8 @@
       "openingHours": "09:00-21:00",
       "acceptsReservations": false,
       "maxGuestsPerReservation": 10
-    }
+    },
+    "slug": "amala-skye"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -603,7 +618,8 @@
       "pricePerNight": 1000
     },
     "description": "AMAZING GRACE HOSTEL AND INTERNATIONAL SERVICED APARTMENTS - Quality service and excellent facilities.",
-    "price": 1000
+    "price": 1000,
+    "slug": "amazing-grace-hostel-and-international-serviced-apartments"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -640,7 +656,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "AMIGOS HOTEL - Quality service and excellent facilities."
+    "description": "AMIGOS HOTEL - Quality service and excellent facilities.",
+    "slug": "amigos-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -689,7 +706,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "AYOTOZ HOTEL - Quality service and excellent facilities."
+    "description": "AYOTOZ HOTEL - Quality service and excellent facilities.",
+    "slug": "ayotoz-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -726,7 +744,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "BAYSEONE ONE PREMIUM - Quality service and excellent facilities."
+    "description": "BAYSEONE ONE PREMIUM - Quality service and excellent facilities.",
+    "slug": "bayseone-one-premium"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -775,7 +794,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "BEST WESTERN PLUS - Quality service and excellent facilities."
+    "description": "BEST WESTERN PLUS - Quality service and excellent facilities.",
+    "slug": "best-western-plus"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -824,7 +844,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "BILLIONAIRE HOTEL - Quality service and excellent facilities."
+    "description": "BILLIONAIRE HOTEL - Quality service and excellent facilities.",
+    "slug": "billionaire-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -861,7 +882,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "BINO HOTEL - Quality service and excellent facilities."
+    "description": "BINO HOTEL - Quality service and excellent facilities.",
+    "slug": "bino-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -902,7 +924,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "BLACK GOLD GUESTHOUSE - Quality service and excellent facilities."
+    "description": "BLACK GOLD GUESTHOUSE - Quality service and excellent facilities.",
+    "slug": "black-gold-guesthouse"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -939,7 +962,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "BON HOTELS IBADAN - Quality service and excellent facilities."
+    "description": "BON HOTELS IBADAN - Quality service and excellent facilities.",
+    "slug": "bon-hotels-ibadan"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -988,7 +1012,8 @@
       ],
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
-    }
+    },
+    "slug": "bon-nest-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -1025,7 +1050,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "BRAVA HOTEL - Quality service and excellent facilities."
+    "description": "BRAVA HOTEL - Quality service and excellent facilities.",
+    "slug": "brava-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -1074,7 +1100,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "BRIGHTON HOTEL & SUITES - Quality service and excellent facilities."
+    "description": "BRIGHTON HOTEL & SUITES - Quality service and excellent facilities.",
+    "slug": "brighton-hotel-suites"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -1113,7 +1140,8 @@
       "openingHours": "09:00-21:00",
       "acceptsReservations": false,
       "maxGuestsPerReservation": 10
-    }
+    },
+    "slug": "caf-chrysalis"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -1150,7 +1178,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "CAPITAL HOTELS - Quality service and excellent facilities."
+    "description": "CAPITAL HOTELS - Quality service and excellent facilities.",
+    "slug": "capital-hotels"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -1181,7 +1210,8 @@
       "venue": "Omolayo Estate Akobo Ibadan",
       "capacity": 50,
       "ticketPrice": 1000
-    }
+    },
+    "slug": "cappo-ologuro-and-gaari-yo-yo"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -1215,7 +1245,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "CHECKINN PRIME SUITES AND RESORTS - Quality service and excellent facilities."
+    "description": "CHECKINN PRIME SUITES AND RESORTS - Quality service and excellent facilities.",
+    "slug": "checkinn-prime-suites-and-resorts"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -1256,7 +1287,8 @@
       ],
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
-    }
+    },
+    "slug": "ck"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -1298,7 +1330,8 @@
       "pricePerNight": 1000
     },
     "description": "CLARUS APARTMENT - Quality service and excellent facilities.",
-    "price": 1000
+    "price": 1000,
+    "slug": "clarus-apartment"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -1347,7 +1380,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "CLASSICUS INN - Quality service and excellent facilities."
+    "description": "CLASSICUS INN - Quality service and excellent facilities.",
+    "slug": "classicus-inn"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -1396,7 +1430,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "CLINCLIA HOTEL - Quality service and excellent facilities."
+    "description": "CLINCLIA HOTEL - Quality service and excellent facilities.",
+    "slug": "clinclia-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -1445,7 +1480,8 @@
       ],
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
-    }
+    },
+    "slug": "damjay-hotel-and-suites"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -1490,7 +1526,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "DANEST HOTEL AND SUITES - Quality service and excellent facilities."
+    "description": "DANEST HOTEL AND SUITES - Quality service and excellent facilities.",
+    "slug": "danest-hotel-and-suites"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -1527,7 +1564,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "DARLINGTON PALACE HOTEL NIG.LTD - Quality service and excellent facilities."
+    "description": "DARLINGTON PALACE HOTEL NIG.LTD - Quality service and excellent facilities.",
+    "slug": "darlington-palace-hotel-nigltd"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -1576,7 +1614,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "DAVIES HOTEL - Quality service and excellent facilities."
+    "description": "DAVIES HOTEL - Quality service and excellent facilities.",
+    "slug": "davies-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -1625,7 +1664,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "DE SIGNATURE TOWER - Quality service and excellent facilities."
+    "description": "DE SIGNATURE TOWER - Quality service and excellent facilities.",
+    "slug": "de-signature-tower"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -1674,7 +1714,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "DE'MANCHY HOTELS AND SUITES - Quality service and excellent facilities."
+    "description": "DE'MANCHY HOTELS AND SUITES - Quality service and excellent facilities.",
+    "slug": "demanchy-hotels-and-suites"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -1719,7 +1760,8 @@
       ],
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
-    }
+    },
+    "slug": "dee-rocket-hotel-lounge"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -1756,7 +1798,8 @@
       ],
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
-    }
+    },
+    "slug": "delad-hotel-and-suits"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -1801,7 +1844,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "Development Support Center (DSC)\n HOTEL - Quality service and excellent facilities."
+    "description": "Development Support Center (DSC)\n HOTEL - Quality service and excellent facilities.",
+    "slug": "development-support-center-dsc-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -1838,7 +1882,8 @@
       ],
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
-    }
+    },
+    "slug": "dominion-city-guest-house"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -1875,7 +1920,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "DOPAD HILLS HOTEL & SUITES - Quality service and excellent facilities."
+    "description": "DOPAD HILLS HOTEL & SUITES - Quality service and excellent facilities.",
+    "slug": "dopad-hills-hotel-suites"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -1920,7 +1966,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "DREAM SUITES - Quality service and excellent facilities."
+    "description": "DREAM SUITES - Quality service and excellent facilities.",
+    "slug": "dream-suites"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -1965,7 +2012,8 @@
       "checkOutTime": "12:00"
     },
     "description": "DUKE RESIDENCE - Quality service and excellent facilities.",
-    "price": 1000
+    "price": 1000,
+    "slug": "duke-residence"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -2014,7 +2062,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "E-EXCLUSIVE HOTEL & SUITES - Quality service and excellent facilities."
+    "description": "E-EXCLUSIVE HOTEL & SUITES - Quality service and excellent facilities.",
+    "slug": "e-exclusive-hotel-suites"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -2063,7 +2112,8 @@
       "checkOutTime": "12:00"
     },
     "description": "EASHREACH COURT HOTEL - Quality service and excellent facilities.",
-    "price": 1000
+    "price": 1000,
+    "slug": "eashreach-court-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -2112,7 +2162,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "ED & DRE LUXURIA HOTEL - Quality service and excellent facilities."
+    "description": "ED & DRE LUXURIA HOTEL - Quality service and excellent facilities.",
+    "slug": "ed-dre-luxuria-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -2149,7 +2200,8 @@
       ],
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
-    }
+    },
+    "slug": "emmaag-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -2186,7 +2238,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "EMMAAG HOTEL - Quality service and excellent facilities."
+    "description": "EMMAAG HOTEL - Quality service and excellent facilities.",
+    "slug": "emmaag-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -2227,7 +2280,8 @@
       "checkOutTime": "12:00"
     },
     "description": "ENIKE HOTEL - Quality service and excellent facilities.",
-    "price": 1000
+    "price": 1000,
+    "slug": "enike-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -2264,7 +2318,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "EURO HOTEL - Quality service and excellent facilities."
+    "description": "EURO HOTEL - Quality service and excellent facilities.",
+    "slug": "euro-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -2301,7 +2356,8 @@
       "checkOutTime": "12:00"
     },
     "description": "EXCLUSIVE HOTELS IBADAN - Quality service and excellent facilities.",
-    "price": 1000
+    "price": 1000,
+    "slug": "exclusive-hotels-ibadan"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -2330,8 +2386,11 @@
     "details": {
       "priceType": "fixed",
       "price": 50000,
-      "availability": ["Mon-Fri"]
-    }
+      "availability": [
+        "Mon-Fri"
+      ]
+    },
+    "slug": "famous-alaga-ayo"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -2380,7 +2439,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "FAWZY HOTEL - Quality service and excellent facilities."
+    "description": "FAWZY HOTEL - Quality service and excellent facilities.",
+    "slug": "fawzy-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -2411,7 +2471,8 @@
       "openingHours": "09:00-21:00",
       "acceptsReservations": false,
       "maxGuestsPerReservation": 10
-    }
+    },
+    "slug": "five-continents"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -2445,7 +2506,8 @@
       "pricePerNight": 50003,
       "maxGuests": 2,
       "amenities": []
-    }
+    },
+    "slug": "fragrance-apartments-and-suites"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -2476,7 +2538,8 @@
       "openingHours": "09:00-21:00",
       "acceptsReservations": false,
       "maxGuestsPerReservation": 10
-    }
+    },
+    "slug": "frt-foodsevents"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -2519,7 +2582,8 @@
       "capacity": 50,
       "ticketPrice": 50000
     },
-    "description": "GALLANISUITES HOTEL, JERICHO - Quality service and excellent facilities."
+    "description": "GALLANISUITES HOTEL, JERICHO - Quality service and excellent facilities.",
+    "slug": "gallanisuites-hotel-jericho"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -2550,7 +2614,8 @@
       "venue": "Challenge Expressway, Falana Bus-Stop, Challenge, Ibadan",
       "capacity": 50,
       "ticketPrice": 100000
-    }
+    },
+    "slug": "geeks-event-place"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -2592,7 +2657,8 @@
       "maxGuests": 2,
       "amenities": []
     },
-    "description": "GEZA LUXURY APARTMENTS - Quality service and excellent facilities."
+    "description": "GEZA LUXURY APARTMENTS - Quality service and excellent facilities.",
+    "slug": "geza-luxury-apartments"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -2637,7 +2703,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "GOLDEN TULIP HOTEL - Quality service and excellent facilities."
+    "description": "GOLDEN TULIP HOTEL - Quality service and excellent facilities.",
+    "slug": "golden-tulip-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -2679,7 +2746,8 @@
       "pricePerNight": 1000
     },
     "description": "GRACE APARTMENTS - Quality service and excellent facilities.",
-    "price": 1000
+    "price": 1000,
+    "slug": "grace-apartments"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -2709,7 +2777,8 @@
       "maxGuests": 2,
       "amenities": []
     },
-    "description": "GRACELITE RESIDENCES - Quality service and excellent facilities."
+    "description": "GRACELITE RESIDENCES - Quality service and excellent facilities.",
+    "slug": "gracelite-residences"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -2758,7 +2827,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "GRAND SERENE HOTELS - Quality service and excellent facilities."
+    "description": "GRAND SERENE HOTELS - Quality service and excellent facilities.",
+    "slug": "grand-serene-hotels"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -2807,7 +2877,8 @@
       "checkOutTime": "12:00"
     },
     "description": "GRANDFIELD HOTELS - Quality service and excellent facilities.",
-    "price": 1000
+    "price": 1000,
+    "slug": "grandfield-hotels"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -2845,7 +2916,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "GREENDALE LODGE & APARTMENTS - Quality service and excellent facilities."
+    "description": "GREENDALE LODGE & APARTMENTS - Quality service and excellent facilities.",
+    "slug": "greendale-lodge-apartments"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -2886,7 +2958,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "HAIL HENRIETTA HOTEL(TRIPLE H) HOTEL - Quality service and excellent facilities."
+    "description": "HAIL HENRIETTA HOTEL(TRIPLE H) HOTEL - Quality service and excellent facilities.",
+    "slug": "hail-henrietta-hoteltriple-h-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -2935,7 +3008,8 @@
       "checkOutTime": "12:00"
     },
     "description": "HARMONIUS HAVEN SERVICES - Quality service and excellent facilities.",
-    "price": 1000
+    "price": 1000,
+    "slug": "harmonius-haven-services"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -2980,7 +3054,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "HARRINGTON INN HOTEL - Quality service and excellent facilities."
+    "description": "HARRINGTON INN HOTEL - Quality service and excellent facilities.",
+    "slug": "harrington-inn-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -3023,7 +3098,8 @@
       "capacity": 50,
       "ticketPrice": 20000
     },
-    "description": "HAVANA IMPERIAL HOTEL - Quality service and excellent facilities."
+    "description": "HAVANA IMPERIAL HOTEL - Quality service and excellent facilities.",
+    "slug": "havana-imperial-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -3054,7 +3130,8 @@
       "venue": "HAVANA ROYALE HALL, U.I ROAD, IBADAN",
       "capacity": 50,
       "ticketPrice": 500000
-    }
+    },
+    "slug": "havana-royale-hall"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -3084,7 +3161,8 @@
       "pricePerNight": 123000,
       "maxGuests": 2,
       "amenities": []
-    }
+    },
+    "slug": "haven-condominium"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -3129,7 +3207,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "HEXAGON HOTEL - Quality service and excellent facilities."
+    "description": "HEXAGON HOTEL - Quality service and excellent facilities.",
+    "slug": "hexagon-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -3170,7 +3249,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "HILL TOP TAVERN HOTEL - Quality service and excellent facilities."
+    "description": "HILL TOP TAVERN HOTEL - Quality service and excellent facilities.",
+    "slug": "hill-top-tavern-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -3211,7 +3291,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "HOTEL MAXIMA - Quality service and excellent facilities."
+    "description": "HOTEL MAXIMA - Quality service and excellent facilities.",
+    "slug": "hotel-maxima"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -3242,7 +3323,8 @@
       "openingHours": "09:00-21:00",
       "acceptsReservations": false,
       "maxGuestsPerReservation": 10
-    }
+    },
+    "slug": "ibachi"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -3273,7 +3355,8 @@
       "venue": "IDI APE, IWO ROAD, IBADAN",
       "capacity": 50,
       "ticketPrice": 600000
-    }
+    },
+    "slug": "ibadan-civic-centre"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -3322,7 +3405,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "IRISHGOLD SUITE - Quality service and excellent facilities."
+    "description": "IRISHGOLD SUITE - Quality service and excellent facilities.",
+    "slug": "irishgold-suite"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -3371,7 +3455,8 @@
       ],
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
-    }
+    },
+    "slug": "jogor-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -3402,7 +3487,8 @@
       "openingHours": "09:00-21:00",
       "acceptsReservations": false,
       "maxGuestsPerReservation": 10
-    }
+    },
+    "slug": "jollof-square"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -3451,7 +3537,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "JOSIAH INN HOTEL - Quality service and excellent facilities."
+    "description": "JOSIAH INN HOTEL - Quality service and excellent facilities.",
+    "slug": "josiah-inn-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -3496,7 +3583,8 @@
       ],
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
-    }
+    },
+    "slug": "kakanfo-inn-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -3545,7 +3633,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "KAKANFO INN AND CONFERENCE CENTRE - Quality service and excellent facilities."
+    "description": "KAKANFO INN AND CONFERENCE CENTRE - Quality service and excellent facilities.",
+    "slug": "kakanfo-inn-and-conference-centre"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -3582,7 +3671,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "KD HOTELS & APARTMENT - Quality service and excellent facilities."
+    "description": "KD HOTELS & APARTMENT - Quality service and excellent facilities.",
+    "slug": "kd-hotels-apartment"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -3620,7 +3710,8 @@
       "pricePerNight": 1000
     },
     "description": "KDHOTEL AND APARTMENT - Quality service and excellent facilities.",
-    "price": 1000
+    "price": 1000,
+    "slug": "kdhotel-and-apartment"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -3665,7 +3756,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "KDREAMS HOTEL - Quality service and excellent facilities."
+    "description": "KDREAMS HOTEL - Quality service and excellent facilities.",
+    "slug": "kdreams-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -3696,7 +3788,8 @@
       "openingHours": "09:00-21:00",
       "acceptsReservations": false,
       "maxGuestsPerReservation": 10
-    }
+    },
+    "slug": "kokodome-plus"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -3745,7 +3838,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "KOLTOL GUESTHOUSE - Quality service and excellent facilities."
+    "description": "KOLTOL GUESTHOUSE - Quality service and excellent facilities.",
+    "slug": "koltol-guesthouse"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -3782,7 +3876,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "KOLTOL HOTEL ANNEXE - Quality service and excellent facilities."
+    "description": "KOLTOL HOTEL ANNEXE - Quality service and excellent facilities.",
+    "slug": "koltol-hotel-annexe"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -3819,7 +3914,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "KOLTOL HOTELS - Quality service and excellent facilities."
+    "description": "KOLTOL HOTELS - Quality service and excellent facilities.",
+    "slug": "koltol-hotels"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -3856,7 +3952,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "LA MAISON HOTEL & SUITES - Quality service and excellent facilities."
+    "description": "LA MAISON HOTEL & SUITES - Quality service and excellent facilities.",
+    "slug": "la-maison-hotel-suites"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -3905,7 +4002,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "La Maison Hotel & Suites - Quality service and excellent facilities."
+    "description": "La Maison Hotel & Suites - Quality service and excellent facilities.",
+    "slug": "la-maison-hotel-suites"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -3942,7 +4040,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "LA'BOTHA HOTEL AND SUITES - Quality service and excellent facilities."
+    "description": "LA'BOTHA HOTEL AND SUITES - Quality service and excellent facilities.",
+    "slug": "labotha-hotel-and-suites"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -3991,7 +4090,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "LABOD HOTEL - Quality service and excellent facilities."
+    "description": "LABOD HOTEL - Quality service and excellent facilities.",
+    "slug": "labod-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -4022,7 +4122,8 @@
       "venue": "43a Awolowo Ave, Old Bodija, Ibadan",
       "capacity": 50,
       "ticketPrice": 400000
-    }
+    },
+    "slug": "le-chateau-event-center"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -4059,7 +4160,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "MAHOGANY HOTEL & SUITES - Quality service and excellent facilities."
+    "description": "MAHOGANY HOTEL & SUITES - Quality service and excellent facilities.",
+    "slug": "mahogany-hotel-suites"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -4090,7 +4192,8 @@
       "venue": "Eleyele Road, Jericho, Ibadan",
       "capacity": 50,
       "ticketPrice": 750000
-    }
+    },
+    "slug": "manhattan-hall"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -4127,7 +4230,8 @@
       ],
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
-    }
+    },
+    "slug": "maracana-luxury-hotel-suites"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -4172,7 +4276,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "MARCHFORTE HOTEL & SUITES - Quality service and excellent facilities."
+    "description": "MARCHFORTE HOTEL & SUITES - Quality service and excellent facilities.",
+    "slug": "marchforte-hotel-suites"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -4203,7 +4308,8 @@
       "openingHours": "09:00-21:00",
       "acceptsReservations": false,
       "maxGuestsPerReservation": 10
-    }
+    },
+    "slug": "marthas-kitchen"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -4244,7 +4350,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "MASFORM LODGE - Quality service and excellent facilities."
+    "description": "MASFORM LODGE - Quality service and excellent facilities.",
+    "slug": "masform-lodge"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -4285,7 +4392,8 @@
       ],
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
-    }
+    },
+    "slug": "mikagn-hotel-and-suites"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -4330,7 +4438,8 @@
       "checkOutTime": "12:00"
     },
     "description": "NEST SPA HOTEL AND SUITES - Quality service and excellent facilities.",
-    "price": 1000
+    "price": 1000,
+    "slug": "nest-spa-hotel-and-suites"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -4379,7 +4488,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "NITAFI LUXURY HOTEL - Quality service and excellent facilities."
+    "description": "NITAFI LUXURY HOTEL - Quality service and excellent facilities.",
+    "slug": "nitafi-luxury-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -4424,7 +4534,8 @@
       "checkOutTime": "12:00"
     },
     "description": "OLYMPUS HOTEL AND SUITES - Quality service and excellent facilities.",
-    "price": 1000
+    "price": 1000,
+    "slug": "olympus-hotel-and-suites"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -4469,7 +4580,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "ORLLAR INTERNATIONAL HOTEL AND\n SUITES - Quality service and excellent facilities."
+    "description": "ORLLAR INTERNATIONAL HOTEL AND\n SUITES - Quality service and excellent facilities.",
+    "slug": "orllar-international-hotel-and-suites"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -4514,7 +4626,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "OSMAK HOTEL AND SUITES - Quality service and excellent facilities."
+    "description": "OSMAK HOTEL AND SUITES - Quality service and excellent facilities.",
+    "slug": "osmak-hotel-and-suites"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -4551,7 +4664,8 @@
       ],
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
-    }
+    },
+    "slug": "owu-crown-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -4596,7 +4710,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "PARKWAY HOTEL - Quality service and excellent facilities."
+    "description": "PARKWAY HOTEL - Quality service and excellent facilities.",
+    "slug": "parkway-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -4634,7 +4749,8 @@
       "checkOutTime": "12:00"
     },
     "description": "POA GUESTHOUSE - Quality service and excellent facilities.",
-    "price": 1000
+    "price": 1000,
+    "slug": "poa-guesthouse"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -4668,7 +4784,8 @@
       "pricePerNight": 40000,
       "maxGuests": 2,
       "amenities": []
-    }
+    },
+    "slug": "purple-realty"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -4717,7 +4834,8 @@
       "checkOutTime": "12:00"
     },
     "description": "QUZTAN SUITES - Quality service and excellent facilities.",
-    "price": 1000
+    "price": 1000,
+    "slug": "quztan-suites"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -4755,7 +4873,8 @@
       "maxGuests": 2,
       "amenities": []
     },
-    "description": "READYHOMES APARTMENT - Quality service and excellent facilities."
+    "description": "READYHOMES APARTMENT - Quality service and excellent facilities.",
+    "slug": "readyhomes-apartment"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -4800,7 +4919,8 @@
       "checkOutTime": "12:00"
     },
     "description": "REAL CHOICE HOTEL - Quality service and excellent facilities.",
-    "price": 1000
+    "price": 1000,
+    "slug": "real-choice-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -4841,7 +4961,8 @@
       "checkOutTime": "12:00"
     },
     "description": "REAL DIAMOND HOTEL - Quality service and excellent facilities.",
-    "price": 1000
+    "price": 1000,
+    "slug": "real-diamond-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -4879,7 +5000,8 @@
       ],
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
-    }
+    },
+    "slug": "revolution-suites"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -4924,7 +5046,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "ROFEL HOTEL - Quality service and excellent facilities."
+    "description": "ROFEL HOTEL - Quality service and excellent facilities.",
+    "slug": "rofel-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -4958,7 +5081,8 @@
       "checkOutTime": "12:00"
     },
     "description": "ROYAL B HOTEL - Quality service and excellent facilities.",
-    "price": 1000
+    "price": 1000,
+    "slug": "royal-b-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -4995,7 +5119,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "ROYAL CEDAR HOTEL AND APARTMENTS - Quality service and excellent facilities."
+    "description": "ROYAL CEDAR HOTEL AND APARTMENTS - Quality service and excellent facilities.",
+    "slug": "royal-cedar-hotel-and-apartments"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -5032,7 +5157,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "ROYAL HOTELS - Quality service and excellent facilities."
+    "description": "ROYAL HOTELS - Quality service and excellent facilities.",
+    "slug": "royal-hotels"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -5069,7 +5195,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "ROYAL PALACE HOTEL - Quality service and excellent facilities."
+    "description": "ROYAL PALACE HOTEL - Quality service and excellent facilities.",
+    "slug": "royal-palace-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -5106,7 +5233,8 @@
       "checkOutTime": "12:00"
     },
     "description": "ROYAL RESORT IBADAN - Quality service and excellent facilities.",
-    "price": 1000
+    "price": 1000,
+    "slug": "royal-resort-ibadan"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -5143,7 +5271,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "ROYAL RESORTS IYAGANKU GRA - Quality service and excellent facilities."
+    "description": "ROYAL RESORTS IYAGANKU GRA - Quality service and excellent facilities.",
+    "slug": "royal-resorts-iyaganku-gra"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -5180,7 +5309,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "ROYAL SIGNATURE HOTEL & SUITES - Quality service and excellent facilities."
+    "description": "ROYAL SIGNATURE HOTEL & SUITES - Quality service and excellent facilities.",
+    "slug": "royal-signature-hotel-suites"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -5225,7 +5355,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "SADIM GUEST HOUSE - Quality service and excellent facilities."
+    "description": "SADIM GUEST HOUSE - Quality service and excellent facilities.",
+    "slug": "sadim-guest-house"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -5274,7 +5405,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "SAIRE HOTEL - Quality service and excellent facilities."
+    "description": "SAIRE HOTEL - Quality service and excellent facilities.",
+    "slug": "saire-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -5311,7 +5443,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "SCROLAB EXECUTIVE HOTELS - Quality service and excellent facilities."
+    "description": "SCROLAB EXECUTIVE HOTELS - Quality service and excellent facilities.",
+    "slug": "scrolab-executive-hotels-oke-ado"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -5360,7 +5493,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "SCROLAB EXECUTIVE HOTELS - Quality service and excellent facilities."
+    "description": "SCROLAB EXECUTIVE HOTELS - Quality service and excellent facilities.",
+    "slug": "scrolab-executive-hotels-felele"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -5390,7 +5524,8 @@
       "pricePerNight": 65000,
       "maxGuests": 2,
       "amenities": []
-    }
+    },
+    "slug": "self-contain-single-rooms-shortlet"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -5439,7 +5574,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "SHUGALAND HOTEL - Quality service and excellent facilities."
+    "description": "SHUGALAND HOTEL - Quality service and excellent facilities.",
+    "slug": "shugaland-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -5488,7 +5624,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "SL HOTEL AND SUITES - Quality service and excellent facilities."
+    "description": "SL HOTEL AND SUITES - Quality service and excellent facilities.",
+    "slug": "sl-hotel-and-suites"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -5525,7 +5662,8 @@
       "checkOutTime": "12:00"
     },
     "description": "SOLAM HOTEL - Quality service and excellent facilities.",
-    "price": 1000
+    "price": 1000,
+    "slug": "solam-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -5554,8 +5692,11 @@
     "details": {
       "priceType": "fixed",
       "price": 1000,
-      "availability": ["Mon-Fri"]
-    }
+      "availability": [
+        "Mon-Fri"
+      ]
+    },
+    "slug": "speed-touch"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -5589,7 +5730,8 @@
       "maxGuests": 2,
       "amenities": []
     },
-    "description": "STELLA HOLIDAY INN- APARTMENTS & HOTELS - Quality service and excellent facilities."
+    "description": "STELLA HOLIDAY INN- APARTMENTS & HOTELS - Quality service and excellent facilities.",
+    "slug": "stella-holiday-inn-apartments-hotels"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -5626,7 +5768,8 @@
       ],
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
-    }
+    },
+    "slug": "subkem-leading-hotels-suites"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -5675,7 +5818,8 @@
       "checkOutTime": "12:00"
     },
     "description": "SUGAR HOUSE SUITES & LOUNGE - Quality service and excellent facilities.",
-    "price": 1000
+    "price": 1000,
+    "slug": "sugar-house-suites-lounge"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -5712,7 +5856,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "SUPREME HOTELS - Quality service and excellent facilities."
+    "description": "SUPREME HOTELS - Quality service and excellent facilities.",
+    "slug": "supreme-hotels"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -5749,7 +5894,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "SYLVIA'S PLACE HOTEL - Quality service and excellent facilities."
+    "description": "SYLVIA'S PLACE HOTEL - Quality service and excellent facilities.",
+    "slug": "sylvias-place-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -5780,7 +5926,8 @@
       "openingHours": "09:00-21:00",
       "acceptsReservations": false,
       "maxGuestsPerReservation": 10
-    }
+    },
+    "slug": "tamberma"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -5817,7 +5964,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "THE BRIDGE HOTEL - Quality service and excellent facilities."
+    "description": "THE BRIDGE HOTEL - Quality service and excellent facilities.",
+    "slug": "the-bridge-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -5854,7 +6002,8 @@
       ],
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
-    }
+    },
+    "slug": "the-carlton-gate-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -5899,7 +6048,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "THE CITRON HOTEL - Quality service and excellent facilities."
+    "description": "THE CITRON HOTEL - Quality service and excellent facilities.",
+    "slug": "the-citron-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -5944,7 +6094,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "THE HAVEN BY NHS GLOBAL - Quality service and excellent facilities."
+    "description": "THE HAVEN BY NHS GLOBAL - Quality service and excellent facilities.",
+    "slug": "the-haven-by-nhs-global"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -5993,7 +6144,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "THE JAGZ HOTEL - Quality service and excellent facilities."
+    "description": "THE JAGZ HOTEL - Quality service and excellent facilities.",
+    "slug": "the-jagz-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -6034,7 +6186,8 @@
       ],
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
-    }
+    },
+    "slug": "the-mathos-court"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -6065,7 +6218,8 @@
       "openingHours": "09:00-21:00",
       "acceptsReservations": false,
       "maxGuestsPerReservation": 10
-    }
+    },
+    "slug": "the-patio"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -6095,7 +6249,8 @@
       "pricePerNight": 30000,
       "maxGuests": 2,
       "amenities": []
-    }
+    },
+    "slug": "tlmshortlets"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -6140,7 +6295,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "TM ROYAL HOTEL - Quality service and excellent facilities."
+    "description": "TM ROYAL HOTEL - Quality service and excellent facilities.",
+    "slug": "tm-royal-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -6189,7 +6345,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "TRAVEL HOUSE HOTEL, IBADAN - Quality service and excellent facilities."
+    "description": "TRAVEL HOUSE HOTEL, IBADAN - Quality service and excellent facilities.",
+    "slug": "travel-house-hotel-ibadan"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -6230,7 +6387,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "TRAVELLERS MISSION GUEST HOUSE - Quality service and excellent facilities."
+    "description": "TRAVELLERS MISSION GUEST HOUSE - Quality service and excellent facilities.",
+    "slug": "travellers-mission-guest-house"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -6275,7 +6433,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "TRINICH HOTEL AND SUITES - Quality service and excellent facilities."
+    "description": "TRINICH HOTEL AND SUITES - Quality service and excellent facilities.",
+    "slug": "trinich-hotel-and-suites"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -6324,7 +6483,8 @@
       ],
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
-    }
+    },
+    "slug": "trois-ore-residences"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -6354,7 +6514,8 @@
       "pricePerNight": 110000,
       "maxGuests": 2,
       "amenities": []
-    }
+    },
+    "slug": "two-bedroom-bungalow"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -6403,7 +6564,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "U.I HOTEL - Quality service and excellent facilities."
+    "description": "U.I HOTEL - Quality service and excellent facilities.",
+    "slug": "ui-hotel"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -6434,7 +6596,8 @@
       "venue": "University of Ibadan, 2nd gate",
       "capacity": 50,
       "ticketPrice": 400000
-    }
+    },
+    "slug": "ui-international-conference-centre"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -6465,7 +6628,8 @@
       "openingHours": "09:00-21:00",
       "acceptsReservations": false,
       "maxGuestsPerReservation": 10
-    }
+    },
+    "slug": "ultima-restaurant"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -6514,7 +6678,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "WAVELENGTH HOTEL AND SUITES - Quality service and excellent facilities."
+    "description": "WAVELENGTH HOTEL AND SUITES - Quality service and excellent facilities.",
+    "slug": "wavelength-hotel-and-suites"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -6551,7 +6716,8 @@
       "checkInTime": "14:00",
       "checkOutTime": "12:00"
     },
-    "description": "WETLAND HOTELS - Quality service and excellent facilities."
+    "description": "WETLAND HOTELS - Quality service and excellent facilities.",
+    "slug": "wetland-hotels"
   },
   {
     "vendorId": "69558890c263664d295678ab",
@@ -6581,6 +6747,7 @@
       "pricePerNight": 75000,
       "maxGuests": 2,
       "amenities": []
-    }
+    },
+    "slug": "shortlet-jericho"
   }
 ]
