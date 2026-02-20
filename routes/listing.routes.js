@@ -3,6 +3,7 @@ import {
   createListing,
   getListings,
   getListingById,
+  getListingBySlug,
   getListingsByVendorId,
   updateListing,
   deleteListing,
@@ -29,6 +30,9 @@ router.get("/featured-services", getFeaturedServices);
 router.get("/featured-events", getFeaturedEvents);
 
 router.get("/vendor/:vendorId", getListingsByVendorId);
+
+// Get listing by slug
+router.get("/slug/:slug", getListingBySlug);
 
 router.get("/:id", getListingById);
 router.patch("/:id", protect, updateListing);

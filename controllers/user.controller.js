@@ -7,8 +7,12 @@ import AppError from "../utils/errorHandler.js";
 export const getUser = catchAsync(async (req, res) => {
   const userId = req.params.id || req.user.id;
 
-  // Users can only get their own profile unless they're admin
-  if (req.user.role !== "admin" && userId !== req.user.id.toString()) {
+  // Users can only get their own profile unless they're admin or superadmin
+  if (
+    req.user.role !== "admin" &&
+    req.user.role !== "superadmin" &&
+    userId !== req.user.id.toString()
+  ) {
     throw new AppError(403, "You can only access your own profile");
   }
 
@@ -25,8 +29,8 @@ export const getUser = catchAsync(async (req, res) => {
 });
 
 export const getUsers = catchAsync(async (req, res) => {
-  // Only admin can access this
-  if (req.user.role !== "admin") {
+  // Only admin or superadmin can access this
+  if (req.user.role !== "admin" && req.user.role !== "superadmin") {
     throw new AppError(403, "Only admin can access this resource");
   }
 
@@ -42,8 +46,8 @@ export const getUsers = catchAsync(async (req, res) => {
 });
 
 export const getUsersByVendor = catchAsync(async (req, res) => {
-  // Only vendor or admin can access this
-  if (req.user.role !== "vendor" && req.user.role !== "admin") {
+  // Only vendor, admin, or superadmin can access this
+  if (req.user.role !== "vendor" && req.user.role !== "admin" && req.user.role !== "superadmin") {
     throw new AppError(403, "Only vendors and admins can access this resource");
   }
 
@@ -57,7 +61,7 @@ export const getUsersByVendor = catchAsync(async (req, res) => {
     throw new AppError(400, "Vendor ID is required");
   }
 
-  // Vendors can only query their own vendor ID (unless they're admin)
+  // Vendors can only query their own vendor ID (unless they're admin or superadmin)
   if (req.user.role === "vendor" && targetVendorId !== req.user.id.toString()) {
     throw new AppError(403, "You can only view users for your own vendor account");
   }
@@ -108,9 +112,9 @@ export const updateUser = catchAsync(async (req, res) => {
     profilePicture,
     password,
   } = req.body;
-  const isAdmin = req.user.role === "admin";
+  const isAdmin = req.user.role === "admin" || req.user.role === "superadmin";
 
-  // Users can only edit their own profile unless they're admin
+  // Users can only edit their own profile unless they're admin or superadmin
   if (!isAdmin && userId !== req.user.id.toString()) {
     throw new AppError(403, "You can only edit your own profile");
   }
@@ -156,8 +160,12 @@ export const updateUser = catchAsync(async (req, res) => {
 export const deleteUser = catchAsync(async (req, res) => {
   const userId = req.params.id || req.user.id;
 
-  // Users can only delete their own profile unless they're admin
-  if (req.user.role !== "admin" && userId !== req.user.id.toString()) {
+  // Users can only delete their own profile unless they're admin or superadmin
+  if (
+    req.user.role !== "admin" &&
+    req.user.role !== "superadmin" &&
+    userId !== req.user.id.toString()
+  ) {
     throw new AppError(403, "You can only delete your own profile");
   }
 

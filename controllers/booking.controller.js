@@ -206,7 +206,7 @@ const createBooking = catchAsync(async (req, res) => {
 });
 
 const getAllBookings = catchAsync(async (req, res) => {
-  if (req.user.role !== "vendor" && req.user.role !== "admin") {
+  if (req.user.role !== "vendor" && req.user.role !== "admin" && req.user.role !== "superadmin") {
     return next(new AppError(403, "You are not authorized to view all bookings"));
   }
 
@@ -244,7 +244,7 @@ const updateBookingStatus = catchAsync(async (req, res) => {
   const { id } = req.params;
   const { status } = req.body;
 
-  if (req.user.role !== "vendor" && req.user.role !== "admin") {
+  if (req.user.role !== "vendor" && req.user.role !== "admin" && req.user.role !== "superadmin") {
     return next(new AppError(403, "You are not authorized to update booking status"));
   }
 

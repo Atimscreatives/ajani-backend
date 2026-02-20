@@ -65,21 +65,21 @@ const limiterDev = rateLimit({
   message: "Too many requests from this IP, please try again in an hour!",
 });
 
-// const minuteLimiter = rateLimit({
-//   windowMs: 60 * 1000, // 1 minute
-//   max: 10,
-//   standardHeaders: true,
-//   legacyHeaders: false,
-//   message: { error: "Too many requests, please try again later." },
-// });
+const minuteLimiter = rateLimit({
+  windowMs: 60 * 1000, // 1 minute
+  max: 10,
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: { error: "Too many requests, please try again later." },
+});
 
-// const hourLimiter = rateLimit({
-//   windowMs: 60 * 60 * 1000, // 1 hour
-//   max: 30,
-//   standardHeaders: true,
-//   legacyHeaders: false,
-//   message: { error: "Too many requests, please try again later in an hour." },
-// });
+const hourLimiter = rateLimit({
+  windowMs: 60 * 60 * 1000, // 1 hour
+  max: 30,
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: { error: "Too many requests, please try again later in an hour." },
+});
 
 app.use("/api", limiterDev);
 

@@ -2,6 +2,17 @@ import mongoose from "mongoose";
 import validator from "validator";
 import { normalizeImages } from "../utils/imageHelpers.js";
 
+// Helper function to generate slug from name
+const generateSlug = name => {
+  return name
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w\s-]/g, "") // Remove special characters except spaces and hyphens
+    .replace(/\s+/g, "-") // Replace spaces with hyphens
+    .replace(/-+/g, "-") // Replace multiple hyphens with single hyphen
+    .replace(/^-+|-+$/g, ""); // Remove leading/trailing hyphens
+};
+
 // Hotel Details Schema
 const HotelDetailsSchema = new mongoose.Schema(
   {
@@ -441,6 +452,17 @@ const EventDetailsSchema = new mongoose.Schema(
           required: true,
           trim: true,
         },
+        hallPhotos: {
+          type: [String],
+          default: [],
+          maxlength: [10, "Hall photos array can have a maximum of 10 images"],
+          validate: {
+            validator: function (v) {
+              return v.every(img => validator.isURL(img));
+            },
+            message: "All hall photos must be valid URLs",
+          },
+        },
         priceRange: {
           priceFrom: {
             type: Number,
@@ -459,33 +481,22 @@ const EventDetailsSchema = new mongoose.Schema(
           min: 0,
           max: 100,
         },
-        refundPolicy: {
-          type: String,
-        },
-        hallPhotos: {
-          type: [String],
-          default: [],
-          maxlength: [10, "Hall photos array can have a maximum of 10 images"],
-          validate: {
-            validator: function (v) {
-              return v.every(img => validator.isURL(img));
-            },
-            message: "All hall photos must be valid URLs",
-          },
-        },
-        eventSetupPhotos: {
-          type: [String],
-          default: [],
-          maxlength: [10, "Event setup photos array can have a maximum of 10 images"],
-          validate: {
-            validator: function (v) {
-              return v.every(img => validator.isURL(img));
-            },
-            message: "All event setup photos must be valid URLs",
-          },
-        },
       },
     ],
+    refundPolicy: {
+      type: String,
+    },
+    eventSetupPhotos: {
+      type: [String],
+      default: [],
+      maxlength: [10, "Event setup photos array can have a maximum of 10 images"],
+      validate: {
+        validator: function (v) {
+          return v.every(img => validator.isURL(img));
+        },
+        message: "All event setup photos must be valid URLs",
+      },
+    },
     numberOfHalls: {
       type: Number,
       required: true,
@@ -563,6 +574,13 @@ const listingSchema = new mongoose.Schema(
     name: {
       type: String,
       required: [true, "Listing name is required"],
+      trim: true,
+    },
+
+    slug: {
+      type: String,
+      unique: true,
+      lowercase: true,
       trim: true,
     },
 
@@ -678,15 +696,32 @@ listingSchema.pre("save", function () {
   }
 });
 
+// Auto-generate slug from name before saving
+listingSchema.pre("save", async function (next) {
+  // Only generate slug if name is modified or this is a new document
+  if (!this.isModified("name") && this.slug) {
+    return next();
+  }
+
+  const baseSlug = generateSlug(this.name);
+  let slug = baseSlug;
+  let counter = 1;
+
+  // Check for existing slugs and ensure uniqueness
+  const Listing = this.constructor;
+  while (await Listing.exists({ slug, _id: { $ne: this._id } })) {
+    slug = `${baseSlug}-${counter}`;
+    counter++;
+  }
+
+  this.slug = slug;
+  next();
+});
+
 // Automatically calculate salesPrice for hotel listings based on basePrice and discountedRate
 listingSchema.pre("save", function () {
   // Only process if this is a hotel listing and has details
-  if (
-    this.category === "hotel" &&
-    this.details &&
-    this.details.roomTypes &&
-    this.details.noOfRooms
-  ) {
+  if (this.category === "hotel" && this.details && this.details.roomTypes) {
     // Process each room type in the hotel
     this.details.roomTypes = this.details.roomTypes.map(roomType => {
       // Only calculate salesPrice if basePrice is provided

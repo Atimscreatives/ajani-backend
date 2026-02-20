@@ -21,7 +21,7 @@ const createListing = catchAsync(async (req, res, next) => {
     vendorId,
   } = req.body;
 
-  // CHECK IF USER IS A VENDOR OR ADMIN
+  // CHECK IF USER IS A VENDOR OR ADMIN OR SUPERADMIN
   if (req.user.role !== "vendor" && req.user.role !== "admin" && req.user.role !== "superadmin") {
     return next(new AppError(403, "You are not registered to create listings"));
   }
@@ -29,7 +29,7 @@ const createListing = catchAsync(async (req, res, next) => {
   // Determine which vendor ID to use for the listing
   let targetVendorId = req.user.id;
 
-  // If admin is creating listing for another vendor
+  // If admin or superadmin is creating listing for another vendor
   if (req.user.role === "admin" || req.user.role === "superadmin") {
     const targetVendor = await User.findById(vendorId);
     if (!vendorId) {
@@ -57,7 +57,6 @@ const createListing = catchAsync(async (req, res, next) => {
 
   // CHECK IF USER CATEGORY IS NOT HOTEL (for non-admins)
   if (category === "hotel" && req.user.role !== "admin" && req.user.role !== "superadmin") {
-    console.log(req.user.role, "CHECK");
     return next(
       new AppError(
         403,
@@ -128,6 +127,20 @@ const getListingById = catchAsync(async (req, res, next) => {
   });
 });
 
+// GET LISTING BY SLUG
+const getListingBySlug = catchAsync(async (req, res, next) => {
+  const listing = await Listing.findOne({ slug: req.params.slug }).populate("vendorId");
+
+  if (!listing) {
+    return next(new AppError(404, "Listing not found"));
+  }
+
+  res.status(200).json({
+    message: "Listing retrieved successfully",
+    data: listing,
+  });
+});
+
 // GET LISTINGS BY VENDOR ID
 const getListingsByVendorId = catchAsync(async (req, res) => {
   const listings = await Listing.find({ vendorId: req.params.vendorId });
@@ -159,9 +172,9 @@ const updateListing = catchAsync(async (req, res, next) => {
     return next(new AppError(400, "category change is not allowed"));
   }
 
-  // Handle vendorId updates (only admins can change vendor)
+  // Handle vendorId updates (only admins or superadmins can change vendor)
   if (updateData.vendorId && updateData.vendorId !== listing.vendorId.toString()) {
-    if (req.user.role !== "admin") {
+    if (req.user.role !== "admin" && req.user.role !== "superadmin") {
       return next(new AppError(403, "Only admins can change listing vendor"));
     }
 
@@ -180,9 +193,9 @@ const updateListing = catchAsync(async (req, res, next) => {
     }
   }
 
-  // Handle status updates (only admins can change status)
+  // Handle status updates (only admins or superadmins can change status)
   if (updateData.status && updateData.status !== listing.status) {
-    if (req.user.role !== "admin") {
+    if (req.user.role !== "admin" && req.user.role !== "superadmin") {
       return next(new AppError(403, "Only admins can change listing status"));
     }
 
@@ -277,6 +290,7 @@ export {
   createListing,
   getListings,
   getListingById,
+  getListingBySlug,
   getListingsByVendorId,
   updateListing,
   deleteListing,
