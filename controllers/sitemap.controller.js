@@ -15,7 +15,11 @@ export const generateSitemap = async (req, res) => {
       return res.send(cachedSitemap);
     }
 
-    const hostname = process.env.BASE_URL || "https://ajani.ai";
+    // Detect host dynamically
+    const protocol = req.protocol;
+    const host = req.get("host");
+    const hostname = `${protocol}://${host}`;
+
     const sitemap = new SitemapStream({ hostname });
 
     // Core pages
