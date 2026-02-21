@@ -18,9 +18,9 @@ export const generateSitemap = async (req, res) => {
     // Detect host dynamically
     const protocol = req.protocol;
     const host = req.get("host");
-    const hostname = `${protocol}://${host}`;
+    // const hostname = `${protocol}://${host}`;
 
-    const sitemap = new SitemapStream({ hostname });
+    const sitemap = new SitemapStream({ hostname: "https://ajaniv3-nine.vercel.app" });
 
     // Core pages
     sitemap.write({ url: "/", changefreq: "daily", priority: 1.0 });
