@@ -16,11 +16,11 @@ export const generateSitemap = async (req, res) => {
     }
 
     // Detect host dynamically
-    // const protocol = req.protocol;
-    // const host = req.get("host");
-    // const hostname = `${protocol}://${host}`;
+    const protocol = req.protocol;
+    const host = req.get("host");
+    const hostname = `${protocol}://${host}`;
 
-    const sitemap = new SitemapStream({ hostname: "https://ajaniv3-nine.vercel.app" });
+    const sitemap = new SitemapStream({ hostname });
 
     // Core pages
     sitemap.write({ url: "/", changefreq: "daily", priority: 1.0 });
@@ -31,6 +31,7 @@ export const generateSitemap = async (req, res) => {
     sitemap.write({ url: "/about-us", changefreq: "yearly", priority: 0.4 });
     sitemap.write({ url: "/privacy-policy", changefreq: "yearly", priority: 0.3 });
     sitemap.write({ url: "/terms-of-service", changefreq: "yearly", priority: 0.3 });
+    sitemap.write({ url: "/corporate-booking", changefreq: "monthly", priority: 0.3 });
 
     // Fetch published listings grouped by category
     const listings = await Listing.find({ status: "approved" })

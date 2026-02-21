@@ -50,7 +50,7 @@ const validateBookingData = (category, details) => {
       if (!details.date) {
         errors.push("Booking date is required");
       }
-      if (!details.numberOfGuest || details.numberOfGuest < 1) {
+      if (!details.numberOfGuests || details.numberOfGuests < 1) {
         errors.push("Number of guests must be at least 1");
       }
       break;

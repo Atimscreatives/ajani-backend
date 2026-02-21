@@ -43,41 +43,41 @@ export const userBookingConfirmationTemplate = (firstName, booking, listing, sta
     bookingDetails = `
       <tr>
         <td style="padding: 8px; border-bottom: 1px solid #ddd;">Booking Date</td>
-        <td style="padding: 8px; border-bottom: 1px solid #ddd;">${formatDate(booking.details.date)}</td>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;">${formatDate(booking.date)}</td>
       </tr>
       <tr>
         <td style="padding: 8px; border-bottom: 1px solid #ddd;">Number of Guests</td>
-        <td style="padding: 8px; border-bottom: 1px solid #ddd;">${booking.details.numberOfGuest}</td>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;">${booking.numberOfGuests}</td>
       </tr>
     `;
-  } else if (booking.__t === "RestaurantBooking") {
+  } else if (booking.__t === "ServicesBooking") {
     bookingDetails = `
       <tr>
         <td style="padding: 8px; border-bottom: 1px solid #ddd;">Service Schedule</td>
-        <td style="padding: 8px; border-bottom: 1px solid #ddd;">${formatDate(booking.details.serviceSchedule)}</td>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;">${formatDate(booking.serviceSchedule)}</td>
       </tr>
       <tr>
         <td style="padding: 8px; border-bottom: 1px solid #ddd;">Service Location</td>
-        <td style="padding: 8px; border-bottom: 1px solid #ddd;">${booking.details.streetAddress}, ${booking.details.city}, ${booking.details.state}</td>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;">${booking.streetAddress}, ${booking.city}, ${booking.state}</td>
       </tr>
       <tr>
         <td style="padding: 8px; border-bottom: 1px solid #ddd;">Service Description</td>
-        <td style="padding: 8px; border-bottom: 1px solid #ddd;">${booking.details.serviceDescription}</td>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;">${booking.serviceDescription}</td>
       </tr>
     `;
   } else if (booking.__t === "EventBooking") {
     bookingDetails = `
       <tr>
         <td style="padding: 8px; border-bottom: 1px solid #ddd;">Event Date</td>
-        <td style="padding: 8px; border-bottom: 1px solid #ddd;">${formatDate(booking.details.eventDate)}</td>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;">${formatDate(booking.eventDate)}</td>
       </tr>
       <tr>
-        <td style="padding: 8px; border-bottom: 1px solid #ddd;">SStart Time</td>
-        <td style="padding: 8px; border-bottom: 1px solid #ddd;">${formatDate(booking.details.startTime)}</td>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;">Start Time</td>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;">${formatDate(booking.startTime)}</td>
       </tr>
       <tr>
         <td style="padding: 8px; border-bottom: 1px solid #ddd;">End Time</td>
-        <td style="padding: 8px; border-bottom: 1px solid #ddd;">${formatDate(booking.details.endTime)}</td>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;">${formatDate(booking.endTime)}</td>
       </tr>
     `;
   }
@@ -245,7 +245,7 @@ export const vendorBookingNotificationTemplate = (vendorName, booking, listing, 
       </tr>
       <tr>
         <td style="padding: 8px; border-bottom: 1px solid #ddd;">Number of Guests</td>
-        <td style="padding: 8px; border-bottom: 1px solid #ddd;">${booking.numberOfGuest}</td>
+        <td style="padding: 8px; border-bottom: 1px solid #ddd;">${booking.numberOfGuests}</td>
       </tr>
     `;
   } else if (booking.__t === "ServicesBooking") {

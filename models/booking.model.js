@@ -67,7 +67,7 @@ const RestaurantBookingDetails = new mongoose.Schema(
       type: Date,
       required: true,
     },
-    numberOfGuest: {
+    numberOfGuests: {
       type: Number,
       required: true,
       min: 1,
