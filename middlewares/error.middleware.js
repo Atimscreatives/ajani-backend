@@ -57,7 +57,8 @@ const errorHandler = (err, req, res, next) => {
 
   // Different error responses for development and production
   if (process.env.NODE_ENV === "development") {
-    let error = { ...err, message: err.message };
+    // let error = { ...err, message: err.message };
+    let error = err;
 
     if (error.code === 11000) error = handleDuplicateFieldsDB(error);
     if (error.name === "MulterError") error = handleMulterError(error);

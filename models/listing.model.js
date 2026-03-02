@@ -697,10 +697,10 @@ listingSchema.pre("save", function () {
 });
 
 // Auto-generate slug from name before saving
-listingSchema.pre("save", async function (next) {
+listingSchema.pre("save", async function () {
   // Only generate slug if name is modified or this is a new document
   if (!this.isModified("name") && this.slug) {
-    return next();
+    return;
   }
 
   const baseSlug = generateSlug(this.name);
@@ -715,7 +715,6 @@ listingSchema.pre("save", async function (next) {
   }
 
   this.slug = slug;
-  next();
 });
 
 // Automatically calculate salesPrice for hotel listings based on basePrice and discountedRate
